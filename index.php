@@ -82,7 +82,7 @@
           <div class="col-md-4">
             <h2>Tugas: Kalkulator Add/Substract</h2>
             <p>Berikut ini merupakan hasil dari tugas yang telah dikerjakan, yaitu kalkulator dengan fungsi add dan substract.</p>
-            <p><a class="btn btn-info" href="rest_api_1.php" target="_blank" role="button">Lihat Hasil &raquo;</a></p>
+            <p><a class="btn btn-info" href="calculator.php" target="_blank" role="button">Lihat Hasil &raquo;</a></p>
           </div>
           <div class="col-md-4">
             <h2>Heading</h2>
