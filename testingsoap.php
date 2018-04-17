@@ -8,6 +8,9 @@ $data = array(
 	'intB'=> "3"
 );
 */
+
 $response = $client->call('Add', array('intA'=> 1, 'intB'=> 3));
+print_r($response);
+// var_dump($response);
 echo $response;
 ?>
