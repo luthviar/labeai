@@ -8,6 +8,6 @@ $data = array(
 	'intB'=> "3"
 );
 */
-$response = $client->call('add', array('intA'=> 1, 'intB'=> 3));
+$response = $client->call('Add', array('intA'=> 1, 'intB'=> 3));
 echo $response;
 ?>
