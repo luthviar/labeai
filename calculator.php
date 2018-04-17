@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -55,7 +54,7 @@
     <main role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <!-- <div class="jumbotron">
         <div class="container text-center">
           <h1 class="display-3">Hello, world!</h1>
           <p>Kami merupakan Kelompok 1 - Add dan Substract, yang terdiri atas anggota:</p>
@@ -68,32 +67,50 @@
 		</p>
           <p><a class="btn btn-primary btn-lg" href="#next_row" role="button">Next &raquo;</a></p>
         </div>
-      </div>
+      </div> -->
+
+      <div class="card">
 
       <div class="container">
         <!-- Example row of columns -->
         <div class="row" id="next_row">
           <div class="col-md-4">
-            <h2>Tutorial Lab REST API</h2>
-            <p>Berikut ini hasil output Lab REST API</p>
-            <p><a class="btn btn-info" href="rest_api_1.php" target="_blank" role="button">Lihat Hasil 1 &raquo;</a></p>
-            <p><a class="btn btn-info" href="rest_api_2.php" target="_blank" role="button">Lihat Hasil 2 &raquo;</a></p>
+          
           </div>
           <div class="col-md-4">
-            <h2>Tugas: Kalkulator Add/Substract</h2>
-            <p>Berikut ini merupakan hasil dari tugas yang telah dikerjakan, yaitu kalkulator dengan fungsi add dan substract.</p>
-            <p><a class="btn btn-info" href="rest_api_1.php" target="_blank" role="button">Lihat Hasil &raquo;</a></p>
+
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <h1 class="text-center">+</h1>
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <h1 class="text-center">=</h1>
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
+            </div>
+
           </div>
           <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          
           </div>
         </div>
 
         <hr>
 
       </div> <!-- /container -->
+
+      </div>
 
     </main>
 
