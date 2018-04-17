@@ -12,7 +12,7 @@
 	}
 
 	//call the function that we want, and give the input from user
-	$response = $client->call('Add', array('intA'=> 99, 'intB'=> 3));
+	$response = $client->call('Subtract', array('intA'=> 99, 'intB'=> 3));
 
 
 	//get the response from server
