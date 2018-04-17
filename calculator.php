@@ -54,32 +54,28 @@
     <main role="main">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <!-- <div class="jumbotron">
-        <div class="container text-center">
-          <h1 class="display-3">Hello, world!</h1>
-          <p>Kami merupakan Kelompok 1 - Add dan Substract, yang terdiri atas anggota:</p>
-          <p>
-			Luthfi Abdurrahim 1406557535
-			<br/>
-			M Hawari Hilman 1406623505
-			<br/>
-			M Rizky Ramadhan 1406577915
-		</p>
-          <p><a class="btn btn-primary btn-lg" href="#next_row" role="button">Next &raquo;</a></p>
+      <div class="jumbotron">
+        <div class="container text-center">        
+          <p>Ini Merupakan fitur kalkulator dengan fungsi Add dan Substract.</p>
         </div>
-      </div> -->
+      </div>
 
-      <div class="card">
+      <div class="">
+        
 
       <div class="container">
         <!-- Example row of columns -->
         <div class="row" id="next_row">
-          <div class="col-md-4">
-          
+          <div class="col-md-2">      
           </div>
-          <div class="col-md-4">
 
-            <div class="input-group input-group-lg">
+          <div class="col-md-4">
+            <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fungsi Add</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <div class="card-text">
+                <div class="input-group input-group-lg">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
               </div>
@@ -99,11 +95,52 @@
               </div>
               <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
             </div>
+              </div>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+
+            </div>
 
           </div>
           <div class="col-md-4">
-          
+            <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Fungsi Substract</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <div class="card-text">
+                <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <h1 class="text-center">-</h1>
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <h1 class="text-center">=</h1>
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
+            </div>
+              </div>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+
+            </div>
+
           </div>
+
+          <div class="col-md-2">      
+          </div>
+
         </div>
 
         <hr>
