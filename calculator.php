@@ -95,6 +95,13 @@
               </div>
               <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
             </div>
+
+            
+            <br/><br/>
+            <div class="input-group input-group-lg">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Submit - Add</button>
+            </div>
+
               </div>
               
             </div>
@@ -129,7 +136,12 @@
               <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
             </div>
               </div>
-              
+            
+                <br/><br/>
+              <div class="input-group input-group-lg">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Submit - Substract</button>
+              </div>
+
             </div>
 
             </div>
