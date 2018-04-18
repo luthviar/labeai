@@ -11,6 +11,7 @@
     	echo "<h2>Constructor error</h2><pre>" . $error . "</pre>";
 	}
 
+	//get the value from user input
 	$angka1 = $_POST['angka1'];
 	$angka2 = $_POST['angka2'];
 
@@ -19,5 +20,5 @@
 
 
 	//get the response from server
-	echo 'hasilnya '.var_export($response['AddResult'], true);
+	echo var_export($response['AddResult'], true);
 ?>

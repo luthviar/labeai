@@ -14,46 +14,25 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
+    <style type="text/css">
+      .navbar-header {
+          float: left;
+          padding: 15px;
+          text-align: center;
+          width: 100%;
+      }
+      .navbar-brand {float:none;}
+
+    </style>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">LAB EAI</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark navbar-default">
+      <a class="navbar-brand" href="/">LAB EAI</a>
     </nav>
 
     <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container text-center">        
           <p>Ini Merupakan fitur kalkulator dengan fungsi Add dan Substract.</p>
@@ -104,37 +83,37 @@
                <div class="card">
                   <div class="card-body">
                      <h5 class="card-title">Fungsi Add</h5>
-                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                     <h6 class="card-subtitle mb-2 text-muted">Kalkulator untuk menambahkan 2 angka</h6>
                      <div class="card-text">
                         <form action="client_add.php" id="ajaxadd" method="POST">
                            <div class="input-group input-group-lg">
                               <div class="input-group-prepend">
                                  <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
                               </div>
-                              <input type="text" name="angka1" placeholder="masukkan angka ke-1" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                              <input type="text" name="angka1" placeholder="1st" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                            </div>
                            <h1 class="text-center">+</h1>
                            <div class="input-group input-group-lg">
                               <div class="input-group-prepend">
                                  <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
                               </div>
-                              <input type="text" name="angka2" placeholder="masukkan angka ke-2" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                              <input type="text" name="angka2" placeholder="2nd" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                            </div>
                            <h1 class="text-center">=</h1>
                            <div class="input-group input-group-lg">
                               <div class="input-group-prepend">
-                                 <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
+                                 <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add :</span>
+                                 <h1 id="hasilAdd"></h1>
                               </div>
-                              <!-- <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" placeholder="hasil add" id="hasilAdd" value=""> -->
-
                            </div>
+
                            <br/>
                            <br/>
                            <div class="input-group input-group-lg">
                               <input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit - Add">
                            </div>
                         </form>
-                        <p id="hasilAdd"></p>
+                        
                      </div>
                   </div>
                </div>
@@ -143,38 +122,43 @@
             <div class="col-md-4">
                <div class="card">
                   <div class="card-body">
-                     <h5 class="card-title">Fungsi Substract</h5>
-                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                     <h5 class="card-title">Fungsi Subtract</h5>
+                     <h6 class="card-subtitle mb-2 text-muted">Kalkulator untuk mengurangkan 2 angka</h6>
                      <div class="card-text">
-                        <div class="input-group input-group-lg">
-                           <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
+                        <form action="client_subtract.php" id="ajaxsubtract" method="POST">
+                           <div class="input-group input-group-lg">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
+                              </div>
+                              <input type="text" name="angka1" placeholder="1st" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                            </div>
-                           <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                        <h1 class="text-center">-</h1>
-                        <div class="input-group input-group-lg">
-                           <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
+                           <h1 class="text-center">+</h1>
+                           <div class="input-group input-group-lg">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
+                              </div>
+                              <input type="text" name="angka2" placeholder="2nd" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                            </div>
-                           <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                        <h1 class="text-center">=</h1>
-                        <div class="input-group input-group-lg">
-                           <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
+                           <h1 class="text-center">=</h1>
+                           <div class="input-group input-group-lg">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Subtract :</span>
+                                 <h1 id="hasilSubtract"></h1>
+                              </div>
                            </div>
-                           <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
-                        </div>
-                     </div>
-                     <br/>
-                     <br/>
-                     <div class="input-group input-group-lg">
-                        <button type="button" class="btn btn-primary btn-lg btn-block">Submit - Substract</button>
+
+                           <br/>
+                           <br/>
+                           <div class="input-group input-group-lg">
+                              <input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit - Subtract">
+                           </div>
+                        </form>
+                        
                      </div>
                   </div>
                </div>
             </div>
+
             <div class="col-md-2"></div>
          </div>
          <hr>
@@ -185,28 +169,32 @@
     </main>
 
     <footer class="container">
-      <p>&copy; Kelompok 1 EAI 2018</p>
+      <p class="text-center">&copy; Kelompok 1 EAI 2018</p>
     </footer>
 
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript">
       
-      // $(document).ready(function() {
-      //   $('#ajaxadd').submit(function(e){
+      $(function () {
 
-      //     $.ajax({
-      //         type: "POST",
-      //         url: "client_add.php",
-      //         data: $("#ajaxadd").serialize(),
-      //         success: function(data) {
-      //             alert(data);
-      //         }
-      //     })
+        $('#ajaxsubtract').on('submit', function (e) {
 
-      //     e.preventDefault();
-      //   })
-          
-      // })
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: 'client_subtract.php',
+            data: $('#ajaxsubtract').serialize(),
+            success: function (data) {
+              console.log(data);
+              document.getElementById("hasilSubtract").innerHTML = data;
+            }
+          });
+
+        });
+
+      });
+
 
        $(function () {
 
