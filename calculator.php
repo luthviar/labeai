@@ -61,100 +61,123 @@
       </div>
 
       <div class="">
-        
+        <script type="text/javascript">
+          // function showAddSatu(angka1) {
+          //     if (angka1.length == 0) { 
+          //         document.getElementById("txtHint").innerHTML = "";
+          //         return;
+          //     } else {
+          //         var xmlhttp = new XMLHttpRequest();
+          //         xmlhttp.onreadystatechange = function() {
+          //             if (this.readyState == 4 && this.status == 200) {
+          //                 document.getElementById("txtHint").innerHTML = this.responseText;
+          //             }
+          //         }
+          //         xmlhttp.open("GET", "client_add.php?q1="+angka1, true);
+          //         xmlhttp.send();
+          //     }
+          // }
 
+          // function showAddDua(angka2) {
+          //     if (angka2.length == 0) { 
+          //         document.getElementById("txtHint").innerHTML = "";
+          //         return;
+          //     } else {
+          //         var xmlhttp = new XMLHttpRequest();
+          //         xmlhttp.onreadystatechange = function() {
+          //             if (this.readyState == 4 && this.status == 200) {
+          //                 document.getElementById("txtHint").innerHTML = this.responseText;
+          //             }
+          //         }
+          //         xmlhttp.open("GET", "client_add.php?q="+angka2, true);
+          //         xmlhttp.send();
+          //     }
+          // }
+        </script>
+
+      
       <div class="container">
-        <!-- Example row of columns -->
-        <div class="row" id="next_row">
-          <div class="col-md-2">      
-          </div>
+         <!-- Example row of columns -->
+         <div class="row" id="next_row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+               <div class="card">
+                  <div class="card-body">
+                     <h5 class="card-title">Fungsi Add</h5>
+                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                     <div class="card-text">
+                        <form action="client_add.php" id="ajaxadd" method="POST">
+                           <div class="input-group input-group-lg">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
+                              </div>
+                              <input type="text" name="angka1" placeholder="masukkan angka ke-1" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                           </div>
+                           <h1 class="text-center">+</h1>
+                           <div class="input-group input-group-lg">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
+                              </div>
+                              <input type="text" name="angka2" placeholder="masukkan angka ke-2" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                           </div>
+                           <h1 class="text-center">=</h1>
+                           <div class="input-group input-group-lg">
+                              <div class="input-group-prepend">
+                                 <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
+                              </div>
+                              <!-- <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" placeholder="hasil add" id="hasilAdd" value=""> -->
 
-          <div class="col-md-4">
-            <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Fungsi Add</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <div class="card-text">
-                <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <h1 class="text-center">+</h1>
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <h1 class="text-center">=</h1>
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
-            </div>
-
-            
-            <br/><br/>
-            <div class="input-group input-group-lg">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Submit - Add</button>
-            </div>
-
-              </div>
-              
-            </div>
-
-            </div>
-
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Fungsi Substract</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <div class="card-text">
-                <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <h1 class="text-center">-</h1>
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <h1 class="text-center">=</h1>
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
-            </div>
-              </div>
-            
-                <br/><br/>
-              <div class="input-group input-group-lg">
-                  <button type="button" class="btn btn-primary btn-lg btn-block">Submit - Substract</button>
-              </div>
-
+                           </div>
+                           <br/>
+                           <br/>
+                           <div class="input-group input-group-lg">
+                              <input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit - Add">
+                           </div>
+                        </form>
+                        <p id="hasilAdd"></p>
+                     </div>
+                  </div>
+               </div>
             </div>
 
+            <div class="col-md-4">
+               <div class="card">
+                  <div class="card-body">
+                     <h5 class="card-title">Fungsi Substract</h5>
+                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                     <div class="card-text">
+                        <div class="input-group input-group-lg">
+                           <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-lg">Input angka pertama</span>
+                           </div>
+                           <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <h1 class="text-center">-</h1>
+                        <div class="input-group input-group-lg">
+                           <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-lg">Input angka kedua</span>
+                           </div>
+                           <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <h1 class="text-center">=</h1>
+                        <div class="input-group input-group-lg">
+                           <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-lg">Hasil Add</span>
+                           </div>
+                           <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" disabled="true" value="10">
+                        </div>
+                     </div>
+                     <br/>
+                     <br/>
+                     <div class="input-group input-group-lg">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Submit - Substract</button>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-          </div>
-
-          <div class="col-md-2">      
-          </div>
-
-        </div>
-
-        <hr>
-
+            <div class="col-md-2"></div>
+         </div>
+         <hr>
       </div> <!-- /container -->
 
       </div>
@@ -165,12 +188,53 @@
       <p>&copy; Kelompok 1 EAI 2018</p>
     </footer>
 
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+      
+      // $(document).ready(function() {
+      //   $('#ajaxadd').submit(function(e){
+
+      //     $.ajax({
+      //         type: "POST",
+      //         url: "client_add.php",
+      //         data: $("#ajaxadd").serialize(),
+      //         success: function(data) {
+      //             alert(data);
+      //         }
+      //     })
+
+      //     e.preventDefault();
+      //   })
+          
+      // })
+
+       $(function () {
+
+        $('#ajaxadd').on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: 'client_add.php',
+            data: $('#ajaxadd').serialize(),
+            success: function (data) {
+              console.log(data);
+              document.getElementById("hasilAdd").innerHTML = data;
+            }
+          });
+
+        });
+
+      });
+
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
