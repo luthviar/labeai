@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="img/favicon.ico">
 
     <title>LAB dan TUGAS EAI</title>
 
@@ -36,49 +36,17 @@
       <div class="jumbotron">
         <div class="container text-center">        
           <p>Ini Merupakan fitur kalkulator dengan fungsi Add dan Substract.</p>
+          <p>Pastikan internet Anda tersambung dengan baik. Karena fitur menggunakan Web Services.</p>
+          <p><a class="btn btn-primary btn-lg" href="#next_row" role="button">Next &raquo;</a></p>
         </div>
       </div>
-
-      <div class="">
-        <script type="text/javascript">
-          // function showAddSatu(angka1) {
-          //     if (angka1.length == 0) { 
-          //         document.getElementById("txtHint").innerHTML = "";
-          //         return;
-          //     } else {
-          //         var xmlhttp = new XMLHttpRequest();
-          //         xmlhttp.onreadystatechange = function() {
-          //             if (this.readyState == 4 && this.status == 200) {
-          //                 document.getElementById("txtHint").innerHTML = this.responseText;
-          //             }
-          //         }
-          //         xmlhttp.open("GET", "client_add.php?q1="+angka1, true);
-          //         xmlhttp.send();
-          //     }
-          // }
-
-          // function showAddDua(angka2) {
-          //     if (angka2.length == 0) { 
-          //         document.getElementById("txtHint").innerHTML = "";
-          //         return;
-          //     } else {
-          //         var xmlhttp = new XMLHttpRequest();
-          //         xmlhttp.onreadystatechange = function() {
-          //             if (this.readyState == 4 && this.status == 200) {
-          //                 document.getElementById("txtHint").innerHTML = this.responseText;
-          //             }
-          //         }
-          //         xmlhttp.open("GET", "client_add.php?q="+angka2, true);
-          //         xmlhttp.send();
-          //     }
-          // }
-        </script>
-
       
-      <div class="container">
-         <!-- Example row of columns -->
+      <div class="container" id="next_row">
+         
          <div class="row" id="next_row">
             <div class="col-md-2"></div>
+            
+            <!-- Mulai Fungsi Add -->
             <div class="col-md-4">
                <div class="card">
                   <div class="card-body">
@@ -118,7 +86,9 @@
                   </div>
                </div>
             </div>
+            <!-- Akhir Fungsi Add -->
 
+            <!-- Mulai Fungsi Substract -->
             <div class="col-md-4">
                <div class="card">
                   <div class="card-body">
@@ -158,6 +128,7 @@
                   </div>
                </div>
             </div>
+            <!-- Akhir Fungsi Subtract -->
 
             <div class="col-md-2"></div>
          </div>
@@ -175,10 +146,10 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript">
       
+      // fungsi ajax untuk menerapkan fungsi subtract
       $(function () {
-
         $('#ajaxsubtract').on('submit', function (e) {
-
+          
           e.preventDefault();
 
           $.ajax({
@@ -190,14 +161,12 @@
               document.getElementById("hasilSubtract").innerHTML = data;
             }
           });
-
         });
-
       });
 
 
+      // fungsi ajax untuk menerapkan fungsi add
        $(function () {
-
         $('#ajaxadd').on('submit', function (e) {
 
           e.preventDefault();
@@ -211,17 +180,11 @@
               document.getElementById("hasilAdd").innerHTML = data;
             }
           });
-
         });
-
       });
 
     </script>
     <script type="text/javascript" src="js/main.js"></script>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     
     <script src="js/bootstrap.min.js"></script>
   </body>

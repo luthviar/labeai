@@ -1,6 +1,6 @@
 <?php
 	//import library nusoap
-	require_once('lib/nusoap.php');
+	require_once('nusoap/lib/nusoap.php');
 
 	//construct new object nusoap_client to call the SOAP service calculator
 	$client = new nusoap_client('http://www.dneonline.com/calculator.asmx?WSDL', true);
